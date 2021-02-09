@@ -146,6 +146,7 @@ body {
 @media (max-width: 550px) {
   body {
     footer {
+      flex-wrap: wrap;
       h1 {
         line-height: initial;
       }
