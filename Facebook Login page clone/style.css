@@ -22,6 +22,8 @@ body main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main #brandSection {
@@ -162,6 +164,7 @@ body main #loginSection #otherLink a {
 }
 
 body footer {
+  width: 100%;
   height: 20vh;
   background-color: #ffffff;
   display: -webkit-box;
@@ -173,6 +176,8 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body footer h1 {
@@ -187,5 +192,11 @@ body footer h1 a {
   text-decoration: none;
   color: #1c1e21;
   font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  body footer h1 {
+    line-height: initial;
+  }
 }
 /*# sourceMappingURL=style.css.map */
