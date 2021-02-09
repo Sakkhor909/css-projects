@@ -8,11 +8,16 @@
 body {
   background-color: #f0f2f5;
   font-family: Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +170,7 @@ body main #loginSection #otherLink a {
 
 body footer {
   width: 100%;
-  height: 20vh;
+  height: 100px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,8 +181,6 @@ body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 body footer h1 {
@@ -195,10 +198,6 @@ body footer h1 a {
 }
 
 @media (max-width: 550px) {
-  body footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   body footer h1 {
     line-height: initial;
   }
