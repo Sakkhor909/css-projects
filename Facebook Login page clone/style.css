@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body main {
+  width: 100%;
+  height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main #brandSection {
+  width: 580px;
+}
+
+body main #brandSection div img {
+  height: 106px;
+}
+
+body main #brandSection h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #1c1e21;
+  line-height: 32px;
+  font-style: normal;
+  margin-left: 30px;
+}
+
+body main #loginSection {
+  height: 456px;
+  width: 396px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #loginSection .login-form {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px #b3bdcc, 0 8px 16px #d1d7e0;
+          box-shadow: 0 2px 4px #b3bdcc, 0 8px 16px #d1d7e0;
+  width: 396px;
+  text-align: center;
+}
+
+body main #loginSection .login-form * {
+  margin: 10px;
+}
+
+body main #loginSection .login-form input {
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 330px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  line-height: 16px;
+  vertical-align: middle;
+  outline: 0;
+}
+
+body main #loginSection .login-form input:focus {
+  border: 1px solid #1877f2;
+}
+
+body main #loginSection .login-form input[type="submit"] {
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+body main #loginSection .login-form input[type="submit"]:hover {
+  background-color: #006eff;
+}
+
+body main #loginSection .login-form a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+body main #loginSection .login-form .line {
+  width: 330px;
+  border-bottom: 1px solid #dadde1;
+}
+
+body main #loginSection .login-form button {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+  background-color: #42b72a;
+  color: #fff;
+}
+
+body main #loginSection .login-form button:hover {
+  background-color: #3ba525;
+}
+
+body main #loginSection #otherLink {
+  margin-top: 28px;
+  text-align: center;
+  border-top: none;
+  color: #1c1e21;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 0;
+}
+
+body main #loginSection #otherLink a {
+  text-decoration: none;
+  color: #1c1e21;
+  font-weight: 600;
+}
+
+body footer {
+  height: 20vh;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #8a8d91;
+}
+
+body footer h1 a {
+  text-decoration: none;
+  color: #1c1e21;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
