@@ -13,10 +13,12 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     #brandSection {
       width: 580px;
+      margin: 50px;
+      margin-top: -50px;
       div {
         img {
           height: 106px;
@@ -146,6 +148,9 @@ body {
 @media (max-width: 550px) {
   body {
     main {
+      #brandSection {
+        margin: 0;
+      }
       #loginSection {
         .login-form {
           width: 100%;
