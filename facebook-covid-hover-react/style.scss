@@ -368,6 +368,7 @@ body {
       color: #1c1e21;
       font-weight: 600;
       font-size: 15px;
+      text-align: center;
     }
     div {
       text-align: center;
@@ -439,6 +440,9 @@ body {
           }
         }
         .post-footer-section {
+          .inner-2nd-section {
+            margin: 0px 0px 0px 0px;
+          }
           .interact-count {
             font-size: 13px;
           }

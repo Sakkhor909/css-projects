@@ -485,6 +485,7 @@ body footer h1 {
   color: #1c1e21;
   font-weight: 600;
   font-size: 15px;
+  text-align: center;
 }
 
 body footer div {
@@ -533,6 +534,9 @@ body footer div a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body main .post-container .post-footer-section .inner-2nd-section {
+    margin: 0px 0px 0px 0px;
   }
   body main .post-container .post-footer-section .interact-count {
     font-size: 13px;
