@@ -334,6 +334,7 @@ body {
         .interact-button {
           border: none;
           outline: none;
+          user-select: none;
           background-color: transparent;
           cursor: pointer;
           padding: 5px 15px;
@@ -409,6 +410,11 @@ body {
         }
       }
     }
+    footer {
+      h1 {
+        font-size: 13px;
+      }
+    }
   }
 }
 
@@ -430,6 +436,11 @@ body {
           .user {
             display: flex;
             align-items: center;
+          }
+        }
+        .post-footer-section {
+          .interact-count {
+            font-size: 13px;
           }
         }
       }

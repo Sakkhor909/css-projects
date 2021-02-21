@@ -438,6 +438,10 @@ body main .post-container .interact-section .emoji .strap-bottom-right {
 body main .post-container .interact-section .interact-button {
   border: none;
   outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: transparent;
   cursor: pointer;
   padding: 5px 15px;
@@ -510,6 +514,9 @@ body footer div a {
     width: 16px;
     height: 16px;
   }
+  body footer h1 {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -526,6 +533,9 @@ body footer div a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body main .post-container .post-footer-section .interact-count {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
