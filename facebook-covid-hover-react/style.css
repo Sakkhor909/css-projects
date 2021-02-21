@@ -276,7 +276,6 @@ body main .post-container .post-footer-section .inner-2nd-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 10px 0px 0px;
 }
 
 body main .post-container .post-footer-section .interact-count {
@@ -534,9 +533,6 @@ body footer div a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  body main .post-container .post-footer-section .inner-2nd-section {
-    margin: 0px 0px 0px 0px;
   }
   body main .post-container .post-footer-section .interact-count {
     font-size: 13px;
