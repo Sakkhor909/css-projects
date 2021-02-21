@@ -6,6 +6,526 @@
 }
 
 body {
-  background-color: lawngreen;
+  background-color: #f0f2f5;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body main .post-container {
+  background-color: #ffffff;
+  width: 38%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 2px 4px #b3bdcc, 0 8px 16px #d1d7e0;
+          box-shadow: 0 2px 4px #b3bdcc, 0 8px 16px #d1d7e0;
+  border-radius: 8px;
+}
+
+body main .post-container .post-1st-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .post-container .post-1st-section .inner-1st-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .logo {
+  width: 70px;
+  height: 70px;
+  margin: 10px 10px 0px 10px;
+  cursor: pointer;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-name {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #050505;
+  cursor: pointer;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-name:hover {
+  text-decoration: underline;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-time {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #65676b;
+  font-size: 13px;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-time span {
+  position: relative;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-time span::before {
+  position: absolute;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  top: -2rem;
+  left: -20px;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: 3;
+  content: attr(data-tooltip);
+  color: whitesmoke;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.616);
+  opacity: 0;
+}
+
+body main .post-container .post-1st-section .inner-1st-section .post-time span:hover::before {
+  opacity: 1;
+}
+
+body main .post-container .post-1st-section .inner-2nd-section {
+  width: 40px;
+  height: 40px;
+  margin: 20px 20px 0px 20px;
+}
+
+body main .post-container .post-1st-section .inner-2nd-section .post-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main .post-container .post-1st-section .inner-2nd-section .post-option:hover {
+  background-color: #ebeef1;
+}
+
+body main .post-container .post-1st-section .inner-2nd-section .post-option .dots {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #8d949e;
+  margin: 2px;
+}
+
+body main .post-container .post-text-section {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px;
+  color: #050505;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+body main .post-container .post-image {
+  border-bottom: 1px solid #ced0d4;
+  background-color: #f0f2f5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body main .post-container .post-image img {
+  width: 100%;
+  height: 200px;
+}
+
+body main .post-container .post-image .image-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .post-container .post-image .image-footer .inner-1st-section {
+  margin: 20px;
+}
+
+body main .post-container .post-image .image-footer .inner-1st-section a {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #65676b;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+body main .post-container .post-image .image-footer .inner-1st-section h3 {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #050505;
+  line-height: 20px;
+  font-size: 17px;
+}
+
+body main .post-container .post-image .image-footer .inner-2nd-section {
+  margin: 20px;
+}
+
+body main .post-container .post-image .image-footer .inner-2nd-section button {
+  padding: 5px 12px;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #050505;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #e4e6eb;
+  border-radius: 6px;
+}
+
+body main .post-container .post-image .image-footer .inner-2nd-section button:hover {
+  background-color: #d7d9df;
+}
+
+body main .post-container .post-footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #ced0d4;
+  margin: 10px 10px 15px 10px;
+}
+
+body main .post-container .post-footer-section .inner-1st-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+body main .post-container .post-footer-section .inner-1st-section .react-icons {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+body main .post-container .post-footer-section .inner-1st-section .react-icons .fa-thumbs-up {
+  background-color: #0471e4;
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  font-size: 15px;
+}
+
+body main .post-container .post-footer-section .inner-1st-section .react-icons .fa-heart {
+  background-color: #f13c59;
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  font-size: 15px;
+}
+
+body main .post-container .post-footer-section .inner-2nd-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 10px 0px 0px;
+}
+
+body main .post-container .post-footer-section .interact-count {
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #65676b;
+  font-weight: 400;
+}
+
+body main .post-container .post-footer-section .interact-count:hover {
+  text-decoration: underline;
+}
+
+body main .post-container .interact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+body main .post-container .interact-section .emoji {
+  --emoji-size: 50px;
+  width: var(--emoji-size);
+  height: var(--emoji-size);
+  position: absolute;
+  top: -190%;
+  left: 7%;
+  bottom: 0;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: 2;
+}
+
+body main .post-container .interact-section .emoji::before {
+  position: absolute;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-transition: 150ms -webkit-transform;
+  transition: 150ms -webkit-transform;
+  transition: 150ms transform;
+  transition: 150ms transform, 150ms -webkit-transform;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: 3;
+  content: attr(data-tooltip);
+  color: whitesmoke;
+  padding: 0.1rem;
+  font-size: 12px;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.616);
+  -webkit-transform: translateX(25%) translateY(-130%) scale(0);
+          transform: translateX(25%) translateY(-130%) scale(0);
+}
+
+body main .post-container .interact-section .emoji:hover::before {
+  -webkit-transform: translateX(25%) translateY(-130%) scale(1);
+          transform: translateX(25%) translateY(-130%) scale(1);
+}
+
+body main .post-container .interact-section .emoji .head {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #ffc83d;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+body main .post-container .interact-section .emoji .eyes {
+  position: absolute;
+  top: calc(var(--emoji-size) * 0.25);
+  left: calc(var(--emoji-size) * 0.5);
+}
+
+body main .post-container .interact-section .emoji .eyes .eye {
+  position: absolute;
+  width: calc(var(--emoji-size) * 0.075);
+  height: calc(var(--emoji-size) * 0.15);
+  background-color: black;
+  border-radius: 50%;
+}
+
+body main .post-container .interact-section .emoji .eyes .eye-left {
+  left: calc(var(--emoji-size) * -0.2);
+}
+
+body main .post-container .interact-section .emoji .eyes .eye-right {
+  right: calc(var(--emoji-size) * -0.2);
+}
+
+body main .post-container .interact-section .emoji .mouth {
+  position: absolute;
+  bottom: calc(var(--emoji-size) * 0.15);
+  left: calc(var(--emoji-size) * 0.5);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: black;
+}
+
+body main .post-container .interact-section .emoji .face-mask {
+  left: calc(var(--emoji-size) * 0.2);
+  -webkit-transform: none;
+          transform: none;
+  width: calc(var(--emoji-size) * 0.6);
+  height: calc(var(--emoji-size) * 0.35);
+  border-radius: 10%;
+  background-color: white;
+  border: calc(var(--emoji-size) * 0.02) solid #999;
+}
+
+body main .post-container .interact-section .emoji .strap {
+  position: absolute;
+  background-color: white;
+  border: calc(var(--emoji-size) * 0.02) solid #999;
+  width: calc(var(--emoji-size) * 0.5);
+  height: calc(var(--emoji-size) * 0.1);
+  z-index: -2;
+}
+
+body main .post-container .interact-section .emoji .strap-top-left {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  top: calc(var(--emoji-size) * -0.05);
+  left: calc(var(--emoji-size) * -0.4);
+}
+
+body main .post-container .interact-section .emoji .strap-top-right {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  top: calc(var(--emoji-size) * -0.05);
+  right: calc(var(--emoji-size) * -0.4);
+}
+
+body main .post-container .interact-section .emoji .strap-bottom-left {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  bottom: calc(var(--emoji-size) * -0.06);
+  left: calc(var(--emoji-size) * -0.4);
+}
+
+body main .post-container .interact-section .emoji .strap-bottom-right {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  bottom: calc(var(--emoji-size) * -0.06);
+  right: calc(var(--emoji-size) * -0.4);
+}
+
+body main .post-container .interact-section .interact-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+body main .post-container .interact-section .interact-button:hover {
+  background-color: #e4e6eb80;
+}
+
+body main .post-container .interact-section .interact-button i {
+  font-size: 20px;
+  color: #65676b;
+}
+
+body main .post-container .interact-section .share img {
+  width: 20px;
+  height: 20px;
+}
+
+body footer {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer h1 {
+  color: #1c1e21;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+body footer div {
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  color: #65676b;
+}
+
+body footer div a {
+  text-decoration: none;
+  color: #1c1e21;
+  font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  body main .post-container {
+    width: 80%;
+  }
+  body main .post-container .post-image .image-footer .inner-1st-section h3 {
+    font-size: 16px;
+  }
+  body main .post-container .interact-section .interact-button i {
+    font-size: 16px;
+  }
+  body main .post-container .interact-section .share img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  body main .post-container {
+    width: 80%;
+  }
+  body main .post-container .post-image .image-footer .inner-1st-section h3 {
+    font-size: 12px;
+  }
+  body main .post-container .interact-section .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
