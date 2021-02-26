@@ -7,12 +7,16 @@
     <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon" />
     <title>YouTube Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <section class="logo-section">
         <div class="menu-bar">
-          <img src="./Image/menu.svg" alt="Menu" />
+          <span class="material-icons"> menu </span>
         </div>
         <div class="logo" title="Youtube Home">
           <img src="./Image/logo.png" alt="logo" />
@@ -27,22 +31,22 @@
             aria-label="Search"
           />
           <button type="submit" class="search-btn">
-            <img src="Image/magnify.svg" alt="search button" />
+            <span class="material-icons"> search </span>
           </button>
         </form>
-        <a class="voice-search">
-          <img src="./Image/keyboard_voice.svg" alt="microphone" />
+        <a class="voice-search" data-tooltip="Search with your voice">
+          <span class="material-icons md-24"> keyboard_voice </span>
         </a>
       </section>
       <section class="header-button-section">
-        <a>
-          <img src="./Image/video-plus.svg" alt="" />
+        <a data-tooltip="Create">
+          <span class="material-icons"> video_call </span>
         </a>
-        <a>
-          <img src="./Image/apps.svg" alt="" />
+        <a data-tooltip="Youtube apps">
+          <span class="material-icons"> apps </span>
         </a>
-        <a>
-          <img src="./Image/bell.svg" alt="" />
+        <a data-tooltip="Notification">
+          <span class="material-icons"> notifications </span>
         </a>
         <a>
           <img
@@ -55,17 +59,23 @@
     </header>
     <main>
       <aside>
-        <a href="#">
-          <img src="./Image/home.svg" alt="Home menu" />
+        <a href="#" class="active" title="Home">
+          <span class="side-bar-menu material-icons"> home </span>
+          <div>Home</div>
         </a>
-        <a href="#">
-          <img src="./Image/local_fire_department.svg" alt="Trending menu" />
+        <a href="#" title="Trending">
+          <span class="side-bar-menu material-icons">
+            local_fire_department
+          </span>
+          <div>Trending</div>
         </a>
-        <a href="#">
-          <img src="./Image/subscriptions.svg" alt="Subscription menu" />
+        <a href="#" title="Subscription">
+          <span class="side-bar-menu material-icons"> subscriptions </span>
+          <div>Subscription</div>
         </a>
-        <a href="#">
-          <img src="./Image/video_library.svg" alt="Library menu" />
+        <a href="#" title="Library">
+          <span class="side-bar-menu material-icons"> video_library </span>
+          <div>Library</div>
         </a>
       </aside>
       <section class="video-section">
@@ -81,6 +91,9 @@
             <button class="category">Category 7</button>
             <button class="category">Category 8</button>
             <button class="category">Category 9</button>
+            <button class="next-button">
+              <span class="material-icons"> navigate_next </span>
+            </button>
           </section>
         </div>
         <div class="videos">
