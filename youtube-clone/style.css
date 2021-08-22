@@ -235,6 +235,7 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 body main aside {
