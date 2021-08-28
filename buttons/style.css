@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+    color: rgb(14, 13, 13);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(224, 221, 221);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-1 {
+    padding: 50px 100px;
+    background-color: hsl(240, 97%, 64%);
+    transition: all 0.5s;
+    clip-path: circle(43.0% at 100% 0);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.btn-1:hover {
+    clip-path: circle(141.4% at 100% 0);
+    background-color: hsl(240, 47%, 64%);
+}
+
+.btn-2 { 
+    padding: 10px 16px;
+    background-color: hsl(240, 97%, 64%);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.5s;
+    transform: translateY(0px);
+}
+
+.btn-2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    background-color: hsl(240, 56%, 47%);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn-2:hover {
+    box-shadow: 0 7px 13px rgba(0, 0, 0, .8);
+    transform: translateY(-3px);
+}
+
+.btn-2:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.btn-3 {
+    padding: 10px 25px;
+    background-color: #073668;
+    position: relative;
+    border-radius: 10px;
+}
+
+.btn-3::before {
+    content: "BUTTON 3";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #681607;
+    transition: all .5s;
+    transform: rotateX(270deg);
+    transform-origin: top;
+}
+
+.btn-3:hover::before {
+   transform: rotateX(0deg);
+}
+
